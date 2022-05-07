@@ -31,6 +31,11 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    
+    
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Camera
 PRODUCT_COPY_FILES += \
