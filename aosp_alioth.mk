@@ -20,6 +20,10 @@ TARGET_HAS_FOD := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Gapps
+WITH_GAPPS := true
+$(call inherit-product, vendor/google/common/common-vendor.mk)
+
 PRODUCT_NAME := aosp_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
